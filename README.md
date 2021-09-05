@@ -1,4 +1,5 @@
 # django_search
+* A simple search function with 'Book' database 
 
 # Descriptions
 * Fundamental MVT pattern of Django 
