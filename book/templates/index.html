@@ -21,7 +21,15 @@
     </div>
     <div class="album py-5 bg-light">
         <div class="container">
+            {% if q %}
+                <p>
+                    {% with results.count as total_results %}
+                    Found {{ total_results }} result{{ total_results|pluralize }}
+                    {% endwith %}
+                </p>
+            {% endif %}
             <div class="row">
+
                 {% for post in results %}
                 <div class="col-md-4">
                     <a class="text-dark" href="">
@@ -31,7 +39,8 @@
                                     {{post.title|truncatechars:50}}
                                 </h2>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <small class="text-muted">{{post.authors}}</small>
+                                    {# 출력되는 headline의 값이 bold체를 갖는다 #}
+                                    <small class="text-muted">{{post.headline|safe}}</small>
                                 </div>
                             </div>
                         </div>

@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'book'
+    'book',
+    # postgres의 Full text search 기능을 사용하기 위한 설정
+    # 왠만하면 맨 하단에 위치시킬것
+    'django.contrib.postgres'
 ]
 
 MIDDLEWARE = [
