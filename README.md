@@ -28,4 +28,4 @@ and optionally to sort them by relevance to the query
 * A data structure for improving retrieve operation in Database 
 
 ## General Inverted Indexing(GIN)
-* A technique to enhance execution time 
+* A technique to enhance execution time in Postgresql
