@@ -1,6 +1,6 @@
 # django_search
 
-# Description
+# Descriptions
 * Fundamental MVT pattern of Django 
 * Docker connection with Postgresql
 * Full-text search and GIN index in Postgresql
@@ -13,8 +13,8 @@
 * Docker (20.10.8)
 * Postgresql(11)
 
-# Summary 
-## Query flow in Postgres 
+# Summaries
+## A query flow in Postgres 
 1. Assume that we write a query in SQL by using a script to get a specific data in server 
 2. A mechanism 'query planner' comes in actions and
 3. Execute a query that has the fastest execution time among queries collectd from query planner 
