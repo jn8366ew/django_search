@@ -1,0 +1,16 @@
+# csv must encoded with utf-8. 
+# at powershell
+
+# create variable 'topicsjson', take csv file, which is .\books.csv, and Convert To Json. 
+
+$topicsjson = import-csv .\books.csv | ConvertTo-Json
+
+
+# topicjson에 
+$topicjson | Add-Content -Path "mydata.json"
+
+
+
+in IDE terminal 
+
+manage.py loaddata mydata
